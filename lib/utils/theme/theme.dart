@@ -12,7 +12,7 @@ import 'custom_themes/text_themes.dart';
 class TAppTheme {
   TAppTheme._();
 
-  static ThemeData ligthTheme = ThemeData(
+  static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
