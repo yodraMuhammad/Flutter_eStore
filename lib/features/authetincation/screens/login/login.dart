@@ -3,11 +3,8 @@ import 'package:ecommerce/common/widgets/login_signup/form_divider.dart';
 import 'package:ecommerce/common/widgets/login_signup/social_button.dart';
 import 'package:ecommerce/features/authetincation/screens/login/widgets/login_form.dart';
 import 'package:ecommerce/features/authetincation/screens/login/widgets/login_header.dart';
-import 'package:ecommerce/utils/constans/colors.dart';
-import 'package:ecommerce/utils/constans/image_strings.dart';
 import 'package:ecommerce/utils/constans/sizes.dart';
 import 'package:ecommerce/utils/constans/text_strings.dart';
-import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,8 +13,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

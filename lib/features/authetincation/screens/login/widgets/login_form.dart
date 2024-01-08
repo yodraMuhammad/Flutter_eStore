@@ -1,5 +1,6 @@
 import 'package:ecommerce/features/authetincation/screens/password_configuration/forget_password.dart';
 import 'package:ecommerce/features/authetincation/screens/signup/signup.dart';
+import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/constans/sizes.dart';
 import 'package:ecommerce/utils/constans/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +71,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 child: const Text(TTexts.signIn),
               ),
             ),
