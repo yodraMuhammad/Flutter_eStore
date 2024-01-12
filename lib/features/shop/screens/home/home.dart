@@ -1,13 +1,12 @@
 import 'package:ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:ecommerce/common/widgets/image_text_widget/vertical_image_text.dart';
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:ecommerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:ecommerce/utils/constans/colors.dart';
 import 'package:ecommerce/utils/constans/image_strings.dart';
 import 'package:ecommerce/utils/constans/sizes.dart';
-import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -32,7 +31,35 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(height: TSizes.spaceBtwSection),
 
                   // Categories
-                  THomeCategories()
+                  Padding(
+                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
+                    child: Column(
+                      children: [
+                        // Heading
+                        TSectionHeading(
+                          title: 'Popular Categories',
+                          showActionButton: false,
+                          textColor: TColors.white,
+                        ),
+                        SizedBox(height: TSizes.spaceBtwItems),
+
+                        // Categories
+                        THomeCategories(),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            // Body
+            Padding(
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+              child: TPromoSlider(
+                banners: [
+                  TImages.promoBanner1,
+                  TImages.promoBanner2,
+                  TImages.promoBanner3
                 ],
               ),
             ),
