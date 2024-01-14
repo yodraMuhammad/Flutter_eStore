@@ -1,3 +1,4 @@
+import 'package:ecommerce/common/styles/shadow.dart';
 import 'package:ecommerce/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -24,7 +25,7 @@ class TProductCardVertical extends StatelessWidget {
         width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
-          // boxShadow: [TShadowStyle.verticalProductShadow],
+          boxShadow: dark ? null : [TShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(TSizes.productImageRadius),
           color: dark ? TColors.darkerGrey : TColors.white,
         ),
