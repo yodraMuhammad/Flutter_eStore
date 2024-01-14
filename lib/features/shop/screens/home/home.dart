@@ -1,5 +1,6 @@
 import 'package:ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce/common/widgets/products/product_cart/product_cart_vertical.dart';
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
@@ -20,16 +21,16 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             // Header
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   // -- Appbar
                   THomeAppbar(),
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
 
                   // -- Searchbar
                   TSearchContainer(text: 'Search in store'),
-                  SizedBox(height: TSizes.spaceBtwSection),
+                  SizedBox(height: TSizes.spaceBtwSections),
 
                   // -- Categories
                   Padding(
@@ -55,7 +56,7 @@ class HomeScreen extends StatelessWidget {
 
             // Body
             Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   // -- Promo Slider
@@ -66,21 +67,16 @@ class HomeScreen extends StatelessWidget {
                       TImages.promoBanner3
                     ],
                   ),
-                  const SizedBox(height: TSizes.spaceBtwSection),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+
+                  // -- Heading
+                  TSectionHeading(title: 'Popular Product', onPressed: () {}),
+                  const SizedBox(height: TSizes.spaceBtwItems),
 
                   // -- Popular Product
-                  GridView.builder(
+                  TGridLayout(
                     itemCount: 4,
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: TSizes.gridViewSpacing,
-                      crossAxisSpacing: TSizes.gridViewSpacing,
-                      mainAxisExtent: 288,
-                    ),
-                    itemBuilder: (_, index) => TProductCardVertical(),
+                    itemBuilder: (_, index) => const TProductCardVertical(),
                   ),
                 ],
               ),

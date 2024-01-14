@@ -1,4 +1,3 @@
-import 'package:ecommerce/utils/constans/colors.dart';
 import 'package:ecommerce/utils/constans/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,7 @@ class TRoundedImage extends StatelessWidget {
     this.applyImageRadius = true,
     required this.imageUrl,
     this.fit = BoxFit.contain,
-    this.backgoroundColor = TColors.light,
+    this.backgoroundColor,
     this.isNetworkImage = false,
     this.borderRadius = TSizes.md,
   });
@@ -22,7 +21,7 @@ class TRoundedImage extends StatelessWidget {
   final String imageUrl;
   final bool applyImageRadius;
   final BoxBorder? border;
-  final Color backgoroundColor;
+  final Color? backgoroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;

@@ -11,8 +11,8 @@ class TAppBar {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.black, size: TSizes.iConMd),
-    actionsIconTheme: IconThemeData(color: Colors.black, size: TSizes.iConMd),
+    iconTheme: IconThemeData(color: Colors.black, size: TSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: Colors.black, size: TSizes.iconMd),
     titleTextStyle: TextStyle(
         fontSize: 18.0, fontWeight: FontWeight.w600, color: Colors.black),
   );
@@ -23,8 +23,8 @@ class TAppBar {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: TColors.black, size: TSizes.iConMd),
-    actionsIconTheme: IconThemeData(color: TColors.white, size: TSizes.iConMd),
+    iconTheme: IconThemeData(color: TColors.black, size: TSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: TColors.white, size: TSizes.iconMd),
     titleTextStyle: TextStyle(
         fontSize: 18.0, fontWeight: FontWeight.w600, color: TColors.white),
   );

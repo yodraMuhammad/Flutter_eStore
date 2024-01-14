@@ -30,7 +30,7 @@ class ResetPassword extends StatelessWidget {
                 image: const AssetImage(TImages.deliveredEmailIllustration),
                 width: THelperFunctions.screenWidth() * 0.6,
               ),
-              const SizedBox(height: TSizes.spaceBtwSection),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               // Title & Subtitle
               Text(
@@ -44,7 +44,7 @@ class ResetPassword extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: TSizes.spaceBtwSection),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               // Button
               SizedBox(

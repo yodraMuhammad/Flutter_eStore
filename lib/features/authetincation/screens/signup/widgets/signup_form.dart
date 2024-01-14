@@ -81,11 +81,11 @@ class TSignupForm extends StatelessWidget {
               suffixIcon: Icon(Iconsax.eye_slash),
             ),
           ),
-          const SizedBox(height: TSizes.spaceBtwSection),
+          const SizedBox(height: TSizes.spaceBtwSections),
 
           // Term & Conditions Checkbox
           const TTermAndCondtionCheckbox(),
-          const SizedBox(height: TSizes.spaceBtwSection),
+          const SizedBox(height: TSizes.spaceBtwSections),
 
           // Signup Button
           SizedBox(

@@ -22,7 +22,7 @@ class ForgetPassword extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwItems),
             Text(TTexts.forgetPasswordSubTitle,
                 style: Theme.of(context).textTheme.labelMedium),
-            const SizedBox(height: TSizes.spaceBtwSection * 2),
+            const SizedBox(height: TSizes.spaceBtwSections * 2),
 
             // Textfield
             TextFormField(
@@ -30,7 +30,7 @@ class ForgetPassword extends StatelessWidget {
                   labelText: TTexts.email,
                   prefixIcon: Icon(Iconsax.direct_right)),
             ),
-            const SizedBox(height: TSizes.spaceBtwSection),
+            const SizedBox(height: TSizes.spaceBtwSections),
 
             // Submit Button
             SizedBox(

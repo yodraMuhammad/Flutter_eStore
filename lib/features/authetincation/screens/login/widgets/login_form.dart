@@ -17,7 +17,7 @@ class TLoginForm extends StatelessWidget {
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          vertical: TSizes.spaceBtwSection,
+          vertical: TSizes.spaceBtwSections,
         ),
         child: Column(
           children: [
@@ -64,7 +64,7 @@ class TLoginForm extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: TSizes.spaceBtwSection,
+              height: TSizes.spaceBtwSections,
             ),
 
             // Sign In Button
