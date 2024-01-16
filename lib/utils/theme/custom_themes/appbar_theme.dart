@@ -2,8 +2,8 @@ import 'package:ecommerce/utils/constans/colors.dart';
 import 'package:ecommerce/utils/constans/sizes.dart';
 import 'package:flutter/material.dart';
 
-class TAppBar {
-  TAppBar._();
+class TAppBarTheme {
+  TAppBarTheme._();
 
   static const lightAppBarTheme = AppBarTheme(
     elevation: 0,
