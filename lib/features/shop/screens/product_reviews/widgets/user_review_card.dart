@@ -35,7 +35,7 @@ class UserReviewCard extends StatelessWidget {
           children: [
             const TRatingBraIndicator(rating: 4),
             const SizedBox(width: TSizes.spaceBtwItems),
-            Text('31 Nove 2023', style: Theme.of(context).textTheme.bodyMedium),  
+            Text('31 Nov 2023', style: Theme.of(context).textTheme.bodyMedium),  
           ],
         ),
         const SizedBox(height: TSizes.spaceBtwItems),
